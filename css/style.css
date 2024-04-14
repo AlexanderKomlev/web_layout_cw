@@ -548,10 +548,12 @@ body {
 }
 
 .social-links-item {
-    width: 20px;
-    height: 20px;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.social-link-icon {
+    width: 20px;
 }
 
 .footer-text {
@@ -705,7 +707,7 @@ body {
     outline: 1px solid #b59f5b;
 }
 
-.button-wrapper {
+.popup__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -716,16 +718,6 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
-}
-
-.button-wrapper:active {
-    background-color: #99863d
-}
-
-.popup__button {
-    cursor: pointer;
-    padding: 5px 5px;
-    color: #fff
 }
 
 @media (max-width: 640px) {
@@ -864,11 +856,11 @@ body {
     }
 
     .posts-list {
-        width: 45%;
+        width: 60%;
     }
 
     .side-bar {
-        width: 30%;
+        width: 35%;
     }
 
     .trends-item {
