@@ -226,6 +226,7 @@ body {
 
 .posts-item__tags {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     padding-left: 1px;
 }
@@ -287,17 +288,18 @@ body {
 
 .new-posts-item {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 22px;
 }
 
 .new-post-item-image {
-    width: 70px;
-    height: 70px;
+    width: 25%;
     object-fit: cover;
 }
 
 .new-posts-item-wrapper {
-    margin-left: 20px;
+    width: 70%;
     margin-top: -9px;
 }
 
@@ -797,47 +799,15 @@ body {
         width: 100%;
         margin-bottom: 40px;
     }
-
 }
 
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
-    .header {
-        background-image: url("../images/banner-bg-tablet.jpg");
-    }
-
-    .header-title-container {
-        width: 600px;
-    }
-
-    .header-title {
-        font-size: 40px;
-        line-height: 55px;
-    }
-
-    .posts-list {
-        width: 60%;
-    }
-
-    .side-bar {
-        width: 35%;
-    }
-
+@media (max-width: 640px) and (orientation: landscape) {
     .trends-item {
         width: 50%;
     }
-
-    .products-list {
-        flex-wrap: wrap;
-        margin-bottom: 0;
-    }
-
-    .products-item {
-        width: 48%;
-        margin-bottom: 40px;
-    }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+@media (min-width: 641px) and (max-width: 1200px) {
     .header {
         background-image: url("../images/banner-bg-tablet.jpg");
     }
@@ -845,7 +815,7 @@ body {
     .header-top {
         align-items: center;
     }
-    
+
     .header-title-container {
         width: 600px;
     }
@@ -875,6 +845,12 @@ body {
     .products-item {
         width: 48%;
         margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+    .trends-item {
+        width: 25%;
     }
 }
 
