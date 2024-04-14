@@ -724,7 +724,7 @@ body {
 }
 
 ._hidden {
-    display: noe;
+    display: none;
 }
 
 @media (max-width: 640px) {
