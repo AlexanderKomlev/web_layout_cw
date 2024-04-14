@@ -567,10 +567,6 @@ body {
     color: #999999;
 }
 
-/* ._hidden {
-    display: none;
-} */
-
 .popup__switch {
     display: none;
 }
@@ -720,6 +716,15 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
+}
+
+.popup__button:active {
+    background-color: #99863d;
+}
+
+._hidden {
+    display: none;
 }
 
 @media (max-width: 640px) {
