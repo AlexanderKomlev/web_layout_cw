@@ -602,7 +602,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 350px;
-    padding: 40px 15px;
+    padding: 2vh 15px;
     background-color: #fff;
 }
 
@@ -619,7 +619,7 @@ body {
 .popup__title {
     font-size: 15px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 1vh;
 }
 
 .question-text {
@@ -641,7 +641,7 @@ body {
     background-position: right 20px center;
     background-size: 10px;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 1vh;
 }
 
 .feedback-form__answers:focus {
@@ -667,7 +667,7 @@ body {
     font-size: 13px;
     display: inline-block;
     margin-right: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 1vh;
     cursor: pointer;
 }
 
@@ -697,7 +697,7 @@ body {
     padding: 20px;
     border: none;
     background-color: #f3f7f6;
-    margin-bottom: 20px;
+    margin-bottom: 1vh;
     color: #7f8180;
 }
 
@@ -724,7 +724,7 @@ body {
 }
 
 ._hidden {
-    display: none;
+    display: noe;
 }
 
 @media (max-width: 640px) {
