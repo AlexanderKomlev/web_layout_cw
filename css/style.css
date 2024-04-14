@@ -820,6 +820,13 @@ body {
         background-image: url("../images/banner-bg-tablet.jpg");
     }
 
+    .posts-list {
+        width: 60%;
+    }
+
+    .side-bar {
+        width: 35%;
+    }
 
     .trends-item {
         width: 50%;
@@ -845,6 +852,13 @@ body {
         align-items: center;
     }
 
+    .posts-list {
+        width: 45%;
+    }
+
+    .side-bar {
+        width: 30%;
+    }
 
     .trends-item {
         width: 50%;
