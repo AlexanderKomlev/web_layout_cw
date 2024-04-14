@@ -399,7 +399,12 @@
 
             <ul class="products-list">
                 <li class="products-item">
-                    <img src="images/shop-item-desk1.jpg" alt="" class="product-image">
+                    <picture>
+                        <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                        <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait)">
+                        <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
+                        <img src="images/shop-item-desk1.jpg" alt="">
+                    </picture>
 
                     <div class="product-item-wrapper">
                         <h3 class="product-title">подушки на диван</h3>
@@ -418,7 +423,11 @@
                     </div>
                 </li>
                 <li class="products-item">
-                    <img src="images/shop-item-desk2.jpg" alt="" class="product-image">
+                    <picture>
+                        <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                        <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait)">
+                        <img src="images/shop-item-desk2.jpg" alt="">
+                    </picture>
 
                     <div class="product-item-wrapper">
                         <h3 class="product-title">кукла "зайчик"</h3>
@@ -437,7 +446,11 @@
                     </div>
                 </li>
                 <li class="products-item">
-                    <img src="images/shop-item-desk3.jpg" alt="" class="product-image">
+                    <picture>
+                        <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+                        <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1200px) and (orientation: portrait)">
+                        <img src="images/shop-item-desk3.jpg" alt="">
+                    </picture>
 
                     <div class="product-item-wrapper">
                         <h3 class="product-title">шестиугольная рамка</h3>

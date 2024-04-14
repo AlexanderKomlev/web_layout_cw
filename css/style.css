@@ -445,7 +445,7 @@ body {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .products-item {
@@ -457,10 +457,6 @@ body {
 
 .products-item:last-child {
     margin-bottom: 0;
-}
-
-.product-image {
-    width: 85%;
 }
 
 .product-item-wrapper {
@@ -801,6 +797,7 @@ body {
     .products-list {
         flex-direction: column;
         margin-bottom: 0;
+        align-items: center;
     }
 
     .products-item {
