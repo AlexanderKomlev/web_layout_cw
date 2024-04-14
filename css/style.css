@@ -127,6 +127,8 @@ body {
 .trends-item__article {
     height: 320px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .trends-item__article::after {
@@ -148,6 +150,9 @@ body {
 }
 
 .trends-item-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     z-index: 2;
     border: 3px solid #b59f5b;
@@ -158,8 +163,10 @@ body {
 .trends-item__tags {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
     margin-left: 35px;
+    margin-right: 35px;
     margin-top: 39px;
 }
 
@@ -800,11 +807,34 @@ body {
     .trends-item {
         width: 100%;
     }
+
+
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .trends-item {
+        width: 50%;
+    }
+
+    .header-title {
+        font-size: 26px;
+        line-height: 36px;
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
     .header {
         background-image: url("../images/banner-bg-tablet.jpg");
+    }
+
+    .header-title {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .trends-item {
+        width: 50%;
     }
 
     .products-list {
