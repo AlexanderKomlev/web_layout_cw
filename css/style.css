@@ -276,6 +276,10 @@ body {
     margin-bottom: 25px;
 }
 
+.side-bar-title-first {
+    margin-top: 0;
+}
+
 .new-posts-list {
     list-style-type: none;
     padding: 0;
@@ -811,27 +815,11 @@ body {
 
 }
 
-@media (max-width: 640px) and (orientation: landscape) {
-    .trends-item {
-        width: 50%;
-    }
-
-    .header-title {
-        font-size: 26px;
-        line-height: 36px;
-        margin-top: 20px;
-    }
-}
-
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
     .header {
         background-image: url("../images/banner-bg-tablet.jpg");
     }
 
-    .header-title {
-        font-size: 40px;
-        line-height: 55px;
-    }
 
     .trends-item {
         width: 50%;
@@ -857,10 +845,6 @@ body {
         align-items: center;
     }
 
-    .header-title {
-        font-size: 40px;
-        line-height: 55px;
-    }
 
     .trends-item {
         width: 50%;
@@ -880,6 +864,20 @@ body {
 @media (max-width: 1200px) {
     .header-menu__list {
         display: none;
+    }
+
+    .header-title {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .post-item__article {
+        flex-direction: column;
+    }
+
+    .post-item-content-wrapper {
+        margin-left: 0;
+        margin-top: 20px;
     }
 
     .burger-menu {
