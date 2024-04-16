@@ -24,13 +24,14 @@ body {
 
 .header {
     width: 100%;
-    height: 449px;
     background-color: #000000;
     background-image: url("../images/banner-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .header::after {
@@ -53,6 +54,7 @@ body {
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
+    align-content: flex-start;
     box-sizing: border-box;
 }
 
@@ -82,7 +84,7 @@ body {
     z-index: 3;
     width: 700px;
     text-align: center;
-    margin: auto;
+    margin:  0 auto;
 }
 
 .header-title {
@@ -90,7 +92,8 @@ body {
     font-size: 45px;
     font-weight: bold;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 120px;
+    margin-bottom: 145px;
     line-height: 75px;
     text-transform: uppercase;
 }
@@ -115,49 +118,49 @@ body {
 
 .trends-list {
     display: flex;
+    align-content: baseline;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
+    width: 100%;
 }
 
 .trends-item {
     width: 25%;
-}
-
-.trends-item__article {
-    height: 320px;
-    position: relative;
     display: flex;
     justify-content: center;
 }
 
+.trends-item__article {
+    min-height: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
 .trends-item__article::after {
     content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .trends-item-image {
     position: absolute;
-    height: 320px;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .trends-item-wrapper {
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    z-index: 2;
     border: 3px solid #b59f5b;
-    bottom: 16px;
-    margin: 0 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    z-index: 3;
 }
 
 .trends-item__tags {
@@ -197,7 +200,6 @@ body {
     margin-top: 60px;
     padding-left: 15px;
     padding-right: 15px;
-    justify-content: space-between;
 }
 
 .posts-list {
@@ -269,7 +271,7 @@ body {
 }
 
 .side-bar {
-    width: 23%;
+    min-width: 270px;
 }
 
 .side-bar-title {
@@ -287,10 +289,13 @@ body {
 }
 
 .new-posts-item {
+    margin-bottom: 22px;
+}
+
+.new-post-item__article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 22px;
 }
 
 .new-post-item-image {
@@ -454,7 +459,16 @@ body {
     width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: stretch;
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-image-wrapper {
+    padding: 0 20px;
 }
 
 .products-item:last-child {
@@ -467,8 +481,7 @@ body {
     width: 100%;
     border: 3px solid #d3c59d;
     display: flex;
-    flex-basis: 270px;
-    flex-shrink: 0;
+    flex-grow: 1;
     flex-direction: column;
     padding: 50px 23px 20px 23px;
 }
@@ -536,6 +549,7 @@ body {
 }
 
 .social-links-wrapper {
+    box-sizing: border-box;
     background-color: #f4f7f6;
     height: 80px;
     display: flex;
@@ -804,6 +818,10 @@ body {
         width: 100%;
         margin-bottom: 40px;
     }
+
+    .social-links-wrapper {
+        margin: 0 15px;
+    }
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
@@ -819,6 +837,8 @@ body {
 
     .header-top {
         align-items: center;
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
     .header-title-container {
@@ -830,16 +850,26 @@ body {
         line-height: 55px;
     }
 
+    .posts {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
     .posts-list {
-        width: 60%;
+        margin-right: 35px;
     }
 
     .side-bar {
-        width: 35%;
+        width: 270px;
     }
 
     .trends-item {
         width: 50%;
+    }
+
+    .products {
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
     .products-list {
@@ -850,6 +880,11 @@ body {
     .products-item {
         width: 48%;
         margin-bottom: 40px;
+    }
+
+    .social-links-wrapper {
+        margin: 0 35px;
+        padding: 0;
     }
 }
 
@@ -913,7 +948,17 @@ body {
         margin-right: auto;
     }
 
+    .posts-list {
+        margin-right: 125px;
+    }
+
     .products {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social-links-wrapper {
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
