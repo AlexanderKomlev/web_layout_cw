@@ -271,7 +271,7 @@ body {
 }
 
 .side-bar {
-    min-width: 270px;
+    width: 270px;
 }
 
 .side-bar-title {
@@ -768,6 +768,10 @@ body {
         margin-top: 20px;
     }
 
+    .trends-item-title {
+        font-size: 16px;
+    }
+
     .burger-menu-wrapper {
         width: 100vw;
         display: flex;
@@ -850,6 +854,10 @@ body {
         line-height: 55px;
     }
 
+    .trends-item-title {
+        font-size: 17px;
+    }
+
     .posts {
         padding-left: 35px;
         padding-right: 35px;
@@ -857,10 +865,6 @@ body {
 
     .posts-list {
         margin-right: 35px;
-    }
-
-    .side-bar {
-        width: 270px;
     }
 
     .trends-item {
